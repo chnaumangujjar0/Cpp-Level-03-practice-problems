@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main(){
+    cout<<"\n ==========STRING REVERSER=========="<<endl;
+    string word;
+    cout<<"Enter Word : ";
+    getline(cin, word); //======I use this for getting whole line including dashes
+    int length =word.length();
+    int counter=0;
+  for(int i=0;i<length;i++){
+    char w = tolower(word[i]); // i use this for making the whole word to lowercases 
+    if(w == 'a' || w== 'e' || w == 'i' || w == 'o' || w=='u'){
+        counter++;
+    }
+  }
+  cout<<counter<<" Vowels in this word"<<endl;
+}
